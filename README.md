@@ -1,2 +1,2 @@
 # hotel-manage
-this is a hotel manage application
+this is a hotel manage application。
