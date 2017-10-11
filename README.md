@@ -1,5 +1,15 @@
 # hotel-manage
 this is a hotel manage application。
-# 这里是一段pr测试
-项目搭建规定及方式
-测试测试新的测试
+## 项目启动
+    安装全局react-native-cli
+
+    npm install -g react-native-cli
+
+    yarn install
+
+    react-native upgrade
+
+    ios 启动项目
+
+    react-native run-ios
+

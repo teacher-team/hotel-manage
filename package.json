@@ -1,0 +1,26 @@
+{
+  "name": "hotel-manage",
+  "version": "1.0.0",
+  "description": "this is a hotel manage application。 # 这里是一段pr测试 项目搭建规定及方式 测试测试新的测试",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyyyyyyyyy/hotel-manage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyyyyyyyyy/hotel-manage/issues"
+  },
+  "homepage": "https://github.com/cyyyyyyyyy/hotel-manage#readme",
+  "dependencies": {
+    "react": "16.0.0-beta.5",
+    "react-native": "0.49.3",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.15.6"
+  }
+}
