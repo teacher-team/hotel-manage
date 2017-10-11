@@ -4,7 +4,7 @@
   "description": "this is a hotel manage application。 # 这里是一段pr测试 项目搭建规定及方式 测试测试新的测试",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --fix --format=node_modules/eslint-formatter-pretty --quiet"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,14 @@
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-saga": "^0.15.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react-native": "^2.3.2"
   }
 }
