@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
 
 export default class App extends Component {
   render() {
+    console.log('123123');
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
