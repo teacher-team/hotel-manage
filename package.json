@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/cyyyyyyyyy/hotel-manage#readme",
   "dependencies": {
+    "antd-mobile": "^1.7.0",
     "react": "16.0.0-beta.5",
+    "expo": "^17.0.0",
     "react-native": "0.49.3",
     "react-navigation": "^1.0.0-beta.13",
     "react-redux": "^5.0.6",
@@ -27,6 +29,10 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "babel-plugin-import": "^1.2.0",
+    "jest-expo": "~1.0.1",
+    "react-native-scripts": "0.0.30",
+    "react-test-renderer": "16.0.0-alpha.6",
     "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-formatter-pretty": "^1.1.0",
