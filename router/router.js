@@ -2,6 +2,7 @@ import { Platform } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import Home from './home';
 
+
 const Router = StackNavigator(
   {
     Home: {
