@@ -1,6 +1,7 @@
 import { Platform } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import Home from './home';
+import Test from './test';
 
 const Router = StackNavigator(
   {
@@ -8,6 +9,11 @@ const Router = StackNavigator(
       name: 'Stack Example',
       description: 'A card stack',
       screen: Home
+    },
+    Test: {
+      name: 'Test',
+      description: 'this is test',
+      screen: Test
     }
   },
   {
