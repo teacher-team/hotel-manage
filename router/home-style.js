@@ -1,8 +1,8 @@
 /*
  * @Author: 陈国栋 
  * @Date: 2017-10-17 21:35:39 
- * @Last Modified by:   mikey.zhaopeng 
- * @Last Modified time: 2017-10-17 21:35:39 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2017-10-17 23:35:56
  */
 
 import { StyleSheet } from 'react-native';
@@ -34,8 +34,8 @@ module.exports = StyleSheet.create({
     borderRightColor: '#ccc'
   },
   touchBox: {
-    width: config.size.width/3-0.33334,
-    height: config.size.width/3,
+    width: (config.size.width / 3) - 0.33334,
+    height: config.size.width / 3,
     backgroundColor: '#f3f3f3'
   },
   touchBox1: {
@@ -46,7 +46,7 @@ module.exports = StyleSheet.create({
   },
   touchBox2: {
     borderBottomWidth: config.pixel,
-    borderBottomColor: '#ccc',
+    borderBottomColor: '#ccc'
     // borderRightWidth: config.pixel,
     // borderRightColor: '#ccc'
     // borderLeftWidth: config.pixel,
@@ -55,8 +55,8 @@ module.exports = StyleSheet.create({
   boxContainer: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: config.size.width/3,
-    height: config.size.width/3,
+    width: config.size.width / 3,
+    height: config.size.width / 3
   },
   boxIcon: {
     position: 'absolute',
@@ -65,7 +65,7 @@ module.exports = StyleSheet.create({
   boxText: {
     position: 'absolute',
     bottom: 15,
-    width: config.size.width/3,
+    width: config.size.width / 3,
     textAlign: 'center',
     left: 0,
     backgroundColor: 'transparent'

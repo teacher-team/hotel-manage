@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Image, TouchableHighlight, Text, StyleSheet } from 'react-native';
+import { ScrollView, View, Image, TouchableHighlight, Text } from 'react-native';
 import { Carousel } from 'antd-mobile';
 // import Icon from 'react-native-vector-icons/Ionicons';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 import styles from './home-style';
 
+const image1 = require('../recoures/images/zhy1.jpg');
+const image2 = require('../recoures/images/zhy1.jpg');
+const image3 = require('../recoures/images/zhy1.jpg');
 
 export default class Home extends Component {
   static navigationOptions = {
@@ -28,7 +31,7 @@ export default class Home extends Component {
       { id: 8, name: '消息发送', icon: 'bed', size: 60, color: '#f00' },
       { id: 9, name: '考勤统计', icon: 'bed', size: 60, color: '#f00' },
       { id: 10, name: '工作统计', icon: 'bed', size: 60, color: '#f00' },
-      { id: 11, name: '布草日记', icon: 'bed', size: 60, color: '#f00' },
+      { id: 11, name: '布草日记', icon: 'bed', size: 60, color: '#f00' }
     ],
     initialHeight: 200
   }
@@ -47,29 +50,30 @@ export default class Home extends Component {
           swipeSpeed={35}
         >
           {this.state.data.map((ii, index) => {
-            const images = [
-              require('../recoures/images/zhy1.jpg'),
-              require('../recoures/images/zhy1.jpg'),
-              require('../recoures/images/zhy1.jpg')
-            ];
+            const images = [image1, image2, image3];
             return (
-              <View key={ ii }>
+              <View key={ii}>
                 <Image source={images[index]} style={{ width: '100%', height: '100%' }} />
               </View>
             );
           })}
         </Carousel>
         <View style={styles.touchBoxContainer}>
-          {this.state.touchBoxData.map((item, index) => {
-            return (
+          {this.state.touchBoxData.map((item, index) =>
+            (
               <TouchableHighlight key={item.id} style={[styles.touchBox, index % 3 === 2 ? styles.touchBox2 : styles.touchBox1]} underlayColor="#eee" onPress={() => navigate('Test')} >
                 <View style={styles.boxContainer}>
                   <Text style={styles.boxText}>{item.name}</Text>
-                  <IconFA size={item.size} name={item.icon} style={[styles.boxIcon, { color: item.color }]}></IconFA>
+                  <IconFA
+                    size={item.size}
+                    name={item.icon}
+                    style={[styles.boxIcon, { color: item.color }]}
+                  >
+                  </IconFA>
                 </View>
               </TouchableHighlight>
-            );
-          })}
+            )
+          )}
         </View>
       </ScrollView>
     );
